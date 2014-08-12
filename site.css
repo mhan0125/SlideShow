@@ -1,0 +1,36 @@
+body {
+    margin: auto;
+}
+#slideshow {
+    width:620px;
+    height:419px;
+    position:relative;
+}
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    width:620px;
+    height:419px;
+}
+#slideshow IMG.active {
+    z-index:10;
+}
+#slideshow IMG.last-active {
+    z-index:9;
+}
+#preview ul {
+    padding: 0;
+    margin: 1px;
+}
+#preview li {
+    display:inline-block;
+}
+#preview li img {
+    height:80px;
+    width: 119px;
+}
+#preview img.active {
+    opacity:0.35;
+}
